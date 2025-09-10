@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock-Paper-Scissors</title>
+  <link rel="stylesheet" href="10-project.css">
+ 
+    
+</head>
+<br>
+  <p class="paragraph">Rock Paper Scissors</p>
+  <button onclick="
+  playGame('rock');
+  " class="move-button"><img src="Image/rock-emoji.png" class="button-image"></button>
+  <button onclick="
+  playGame('paper');
+  "class="move-button"><img src="Image/paper-emoji.png" class="button-image"></button>
+  <button onclick="
+  playGame('Scissors');
+  "class="move-button"><img src="Image/scissors-emoji.png" class="button-image"></button>
+
+  <p class="js-result result"></p>
+  <p class="js-move move"></p>
+  <p class="js-score score"></p> 
+
+  <button onclick="
+    score.wins = 0;
+    score.losses=0;
+    score.ties=0;  
+    localStorage.removeItem('score');
+    updateScore();
+  " class="reset">Reset Score</button>
+  <script src="10-project.js">
+   
+  </script>
+  <br></br>
+  <footer>Created By <a href="https://github.com/vivekyadav72560"></a>Vivek Yadav</footer>
+</body>
+</html>
